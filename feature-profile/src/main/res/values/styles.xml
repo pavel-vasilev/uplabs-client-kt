@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MedalStyle">
+        <attr name="colorMedalLight" format="color"/>
+        <attr name="colorMedalDark" format="color"/>
+    </declare-styleable>
+    <style name="GoldMedal">
+        <item name="colorMedalLight">@color/colorGoldLight</item>
+        <item name="colorMedalDark">@color/colorGoldDark</item>
+    </style>
+    <style name="SilverMedal">
+        <item name="colorMedalLight">@color/colorSilverLight</item>
+        <item name="colorMedalDark">@color/colorSilverDark</item>
+    </style>
+    <style name="BronzeMedal">
+        <item name="colorMedalLight">@color/colorBronzeLight</item>
+        <item name="colorMedalDark">@color/colorBronzeDark</item>
+    </style>
+</resources>

@@ -2,4 +2,10 @@
 <resources>
     <color name="colorGrey">#a2a8b1</color>
     <color name="colorWhite">#ffffff</color>
+    <color name="colorGoldLight">#f9ac30</color>
+    <color name="colorGoldDark">#dd8d19</color>
+    <color name="colorSilverLight">#eaeae4</color>
+    <color name="colorSilverDark">#d4d2c6</color>
+    <color name="colorBronzeLight">#b1978c</color>
+    <color name="colorBronzeDark">#886f65</color>
 </resources>

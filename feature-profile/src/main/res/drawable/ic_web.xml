@@ -1,0 +1,46 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="38dp"
+    android:height="46dp"
+    android:viewportWidth="38"
+    android:viewportHeight="46">
+  <path
+      android:pathData="M23.392,0l14.366,0l-11.943,15.66l-14.365,0z"
+      android:strokeWidth="1"
+      android:fillColor="#4236dd"
+      android:fillType="nonZero"/>
+  <path
+      android:pathData="M27.942,0l4.942,0l-11.622,15.66l-4.942,0z"
+      android:strokeWidth="1"
+      android:fillColor="#eaeae4"
+      android:fillType="nonZero"/>
+  <path
+      android:pathData="M19,31.35m-14.65,0a14.65,14.65 0,1 1,29.3 0a14.65,14.65 0,1 1,-29.3 0"
+      android:strokeWidth="1"
+      android:fillColor="?attr/colorMedalLight"
+      android:fillType="nonZero"/>
+  <path
+      android:pathData="m11.958,19.574v-3.9149h14.084v3.9149l3.018,1.9574v-7.8298c0,-0.4258 -0.5695,-0.9787 -1.006,-0.9787h-18.108c-0.4355,0 -1.006,0.5529 -1.006,0.9787v7.8298l3.018,-1.9574z"
+      android:strokeWidth="1"
+      android:fillColor="?attr/colorMedalLight"
+      android:fillType="nonZero"/>
+  <path
+      android:pathData="M8.282,31.319a11.205,11.255 0,1 0,22.41 0a11.205,11.255 0,1 0,-22.41 0z"
+      android:strokeWidth="1"
+      android:fillColor="?attr/colorMedalDark"
+      android:fillType="nonZero"/>
+  <path
+      android:pathData="M14.329,0l-14.0855,0l11.7095,15.66l14.086,0z"
+      android:strokeWidth="1"
+      android:fillColor="#4236dd"
+      android:fillType="nonZero"/>
+  <path
+      android:pathData="M9.7671,0l-5.0373,0l11.8442,15.66l5.038,0z"
+      android:strokeWidth="1"
+      android:fillColor="#eaeae4"
+      android:fillType="nonZero"/>
+  <path
+      android:pathData="M24.25,26.167h-10.5a1.17,1.17 0,0 0,-1.167 1.166v7A1.17,1.17 0,0 0,13.75 35.5h4.083v1.167h-1.166v1.166h4.666v-1.166h-1.166L20.167,35.5h4.083a1.17,1.17 0,0 0,1.167 -1.167v-7a1.17,1.17 0,0 0,-1.167 -1.166zM24.25,34.333h-10.5v-7h10.5v7z"
+      android:strokeWidth="1"
+      android:fillColor="?attr/colorMedalLight"
+      android:fillType="nonZero"/>
+</vector>
