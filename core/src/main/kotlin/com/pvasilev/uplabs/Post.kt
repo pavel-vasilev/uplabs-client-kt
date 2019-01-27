@@ -10,6 +10,7 @@ data class Post(
     val submitter: User,
     val views: Int,
     val comments: Int,
+    val downloads: Int,
     val votes: Int,
     val medal: Medal?
 )
