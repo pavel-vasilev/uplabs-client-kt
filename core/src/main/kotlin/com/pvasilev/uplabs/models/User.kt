@@ -1,4 +1,4 @@
-package com.pvasilev.uplabs
+package com.pvasilev.uplabs.models
 
 data class User(
     val id: Int,

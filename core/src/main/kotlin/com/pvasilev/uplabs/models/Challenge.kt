@@ -1,4 +1,4 @@
-package com.pvasilev.uplabs
+package com.pvasilev.uplabs.models
 
 data class Challenge(
     val id: Int,

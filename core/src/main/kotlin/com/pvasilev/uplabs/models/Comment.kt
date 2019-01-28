@@ -1,4 +1,4 @@
-package com.pvasilev.uplabs
+package com.pvasilev.uplabs.models
 
 data class Comment(
     val id: Int,
