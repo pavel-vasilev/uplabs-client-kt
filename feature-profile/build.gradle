@@ -28,6 +28,10 @@ android {
 
 }
 
+androidExtensions {
+    experimental = true
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(":core")
@@ -39,6 +43,7 @@ dependencies {
     implementation 'com.airbnb.android:mvrx:0.7.2'
     implementation 'com.airbnb.android:epoxy:3.2.0'
     kapt 'com.airbnb.android:epoxy-processor:3.2.0'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
