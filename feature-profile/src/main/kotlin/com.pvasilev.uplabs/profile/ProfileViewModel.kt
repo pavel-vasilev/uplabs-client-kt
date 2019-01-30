@@ -1,13 +1,11 @@
-package com.pvasilev.uplabs
+package com.pvasilev.uplabs.profile
 
-import androidx.lifecycle.ViewModel
 import com.airbnb.mvrx.BaseMvRxViewModel
 import com.airbnb.mvrx.MvRxViewModelFactory
-import com.airbnb.mvrx.appendAt
 import com.pvasilev.uplabs.network.UserService
 
 class ProfileViewModel(
-    private val initialState: ProfileState,
+    initialState: ProfileState,
     private val userService: UserService
 ) : BaseMvRxViewModel<ProfileState>(initialState) {
     init {

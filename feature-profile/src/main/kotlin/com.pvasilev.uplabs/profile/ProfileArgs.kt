@@ -1,4 +1,4 @@
-package com.pvasilev.uplabs
+package com.pvasilev.uplabs.profile
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
