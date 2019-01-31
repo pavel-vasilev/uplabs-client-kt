@@ -1,4 +1,4 @@
-package com.pvasilev.uplabs.profile
+package com.pvasilev.uplabs.followers
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,11 +8,11 @@ import com.airbnb.mvrx.BaseMvRxFragment
 import com.airbnb.mvrx.fragmentViewModel
 import com.airbnb.mvrx.withState
 import com.pvasilev.uplabs.R
-import com.pvasilev.uplabs.postPreview
+import com.pvasilev.uplabs.oneLineAvatar
 import kotlinx.android.synthetic.main.fragment_base.*
 
-class ProfileFragment : BaseMvRxFragment() {
-    private val viewModel: ProfileViewModel by fragmentViewModel()
+class FollowersFragment : BaseMvRxFragment() {
+    private val viewModel: FollowersViewModel by fragmentViewModel()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -23,15 +23,11 @@ class ProfileFragment : BaseMvRxFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         recyclerView.buildModelsWith { controller ->
             withState(viewModel) { state ->
-                for (post in state.posts) {
-                    controller.postPreview {
-                        id(post.id)
-                        preview(post.previewUrl)
-                        title(post.title)
-                        views(post.views)
-                        comments(post.comments)
-                        downloads(post.downloads)
-                        avatar(post.submitter.avatarUrl)
+                for (user in state.users) {
+                    controller.oneLineAvatar {
+                        id(user.id)
+                        title(user.fullName)
+                        avatar(user.avatarUrl)
                     }
                 }
             }

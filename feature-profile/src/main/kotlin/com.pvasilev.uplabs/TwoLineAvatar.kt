@@ -26,8 +26,8 @@ class TwoLineAvatar(context: Context) : LinearLayout(context) {
         tv_subtitle.text = subtitle
     }
 
-    @ModelProp
-    fun avatar(url: String) {
+    @TextProp
+    fun avatar(url: CharSequence) {
         Glide.with(context)
             .load(url)
             .into(iv_avatar)

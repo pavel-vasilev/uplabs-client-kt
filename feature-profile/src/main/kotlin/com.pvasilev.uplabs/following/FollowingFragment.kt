@@ -25,6 +25,7 @@ class FollowingFragment : BaseMvRxFragment() {
             withState(viewModel) { state ->
                 for (user in state.users) {
                     controller.oneLineAvatar {
+                        id(user.id)
                         title(user.fullName)
                         avatar(user.avatarUrl)
                     }

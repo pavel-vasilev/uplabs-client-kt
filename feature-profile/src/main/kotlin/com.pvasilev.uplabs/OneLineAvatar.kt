@@ -4,7 +4,6 @@ import android.content.Context
 import android.view.View
 import android.widget.LinearLayout
 import com.airbnb.epoxy.CallbackProp
-import com.airbnb.epoxy.ModelProp
 import com.airbnb.epoxy.ModelView
 import com.airbnb.epoxy.TextProp
 import com.bumptech.glide.Glide
@@ -21,8 +20,8 @@ class OneLineAvatar(context: Context) : LinearLayout(context) {
         tv_title.text = title
     }
 
-    @ModelProp
-    fun avatar(url: String) {
+    @TextProp
+    fun avatar(url: CharSequence) {
         Glide.with(context)
             .load(url)
             .into(iv_avatar)
