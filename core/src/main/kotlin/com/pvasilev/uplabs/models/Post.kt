@@ -7,7 +7,7 @@ import com.squareup.moshi.JsonClass
 data class Post(
     val id: Int,
     @Json(name = "name") val title: String,
-    @Json(name = "description_without_html") val description: Int,
+    @Json(name = "description_without_html") val description: String,
     @Json(name = "preview_url") val previewUrl: String,
     @Json(name = "label_friendly_name") val label: String,
     @Json(name = "category_friendly_name") val category: String,

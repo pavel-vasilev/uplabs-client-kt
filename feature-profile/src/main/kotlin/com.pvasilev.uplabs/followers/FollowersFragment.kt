@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import com.airbnb.mvrx.BaseMvRxFragment
 import com.airbnb.mvrx.fragmentViewModel
 import com.airbnb.mvrx.withState
+import com.pvasilev.uplabs.EndlessScrollListener
 import com.pvasilev.uplabs.R
 import com.pvasilev.uplabs.oneLineAvatar
 import kotlinx.android.synthetic.main.fragment_base.*
@@ -32,6 +33,7 @@ class FollowersFragment : BaseMvRxFragment() {
                 }
             }
         }
+        recyclerView.addOnScrollListener(EndlessScrollListener(viewModel::fetchNextPage))
     }
 
     override fun invalidate() {

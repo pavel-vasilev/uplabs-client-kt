@@ -12,7 +12,7 @@ class FollowingViewModel(
         fetchNextPage()
     }
 
-    private fun fetchNextPage() {
+    fun fetchNextPage() {
         withState { state ->
             userService.getFollowing(state.nickname, state.users.size / USERS_PER_PAGE + 1)
                 .execute { copy(request = it, users = users + (it() ?: emptyList())) }

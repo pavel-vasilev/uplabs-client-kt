@@ -12,7 +12,7 @@ class ProfileViewModel(
         fetchNextPage()
     }
 
-    private fun fetchNextPage() {
+    fun fetchNextPage() {
         withState { state ->
             userService.getPosts(state.nickname, state.posts.size / POSTS_PER_PAGE + 1)
                 .execute { copy(request = it, posts = posts + (it() ?: emptyList())) }
