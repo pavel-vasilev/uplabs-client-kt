@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">feature-create-post</string>
+    <string-array name="categories">
+        <item>Android</item>
+        <item>iOS</item>
+        <item>Web</item>
+        <item>3D</item>
+        <item>Motion</item>
+        <item>Branding</item>
+        <item>Illustration</item>
+    </string-array>
+    <string name="hint_title">Title</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_category">Category</string>
+    <string name="title_free_license">Free</string>
+    <string name="subtitle_free_license">For personal &amp; commercial projects</string>
+    <string name="title_commercial_license">Commercial</string>
+    <string name="subtitle_commercial_license">Sell it for commercial projects</string>
+    <string name="button_continue">Continue</string>
+    <string name="button_finish">Finish</string>
+    <string name="button_cancel">Cancel</string>
 </resources>
