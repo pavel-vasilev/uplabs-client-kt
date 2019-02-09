@@ -4,15 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.airbnb.mvrx.BaseMvRxFragment
 import com.airbnb.mvrx.fragmentViewModel
 import com.airbnb.mvrx.withState
-import com.pvasilev.uplabs.EndlessScrollListener
-import com.pvasilev.uplabs.R
-import com.pvasilev.uplabs.oneLineAvatar
+import com.pvasilev.uplabs.*
 import kotlinx.android.synthetic.main.fragment_base.*
 
-class FollowersFragment : BaseMvRxFragment() {
+class FollowersFragment : BaseMvRxFragment<FollowersState, FollowersViewModel>() {
+    override val viewModelFactory: FollowersViewModel.Factory = TODO()
+
     private val viewModel: FollowersViewModel by fragmentViewModel()
 
     override fun onCreateView(
