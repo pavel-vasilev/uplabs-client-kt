@@ -1,5 +1,5 @@
 package com.pvasilev.uplabs
 
-enum class StepperItemState {
+enum class StepState {
     ACTIVE, INACTIVE, DONE
 }

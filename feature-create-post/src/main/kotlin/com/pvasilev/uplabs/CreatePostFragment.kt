@@ -22,23 +22,21 @@ class CreatePostFragment : BaseMvRxFragment() {
         recyclerView.buildModelsWith { controller ->
             withState(viewModel) { state ->
                 controller.apply {
-                    for ((index, step) in state.steps.withIndex()) {
-                        stepperItem {
-                            id(index)
-                            position(index + 1)
-                            title(step.title)
-                            summary(step.summary)
-                            stepLayout(step.layout)
-                            onContinue(viewModel::onContinueClicked)
-                            onCancel(viewModel::onCancelClicked)
-                            state(
-                                when {
-                                    state.currentStep == index -> StepperItemState.ACTIVE
-                                    state.currentStep < index -> StepperItemState.INACTIVE
-                                    else -> StepperItemState.DONE
-                                }
-                            )
-                        }
+                    step {
+                        id(0)
+                        position(1)
+                        title("Title of step 1")
+                        summary("Summary of step 1")
+                        onContinue(viewModel::onContinueClicked)
+                        onCancel(viewModel::onCancelClicked)
+                        models(listOf())
+                        state(
+                            when {
+                                state.currentStep == 0 -> StepState.ACTIVE
+                                state.currentStep < 0 -> StepState.INACTIVE
+                                else -> StepState.DONE
+                            }
+                        )
                     }
                 }
             }
