@@ -12,6 +12,7 @@
     <string name="hint_title">Title</string>
     <string name="hint_description">Description</string>
     <string name="hint_category">Category</string>
+    <string name="hint_subcategory">Subcategory</string>
     <string name="title_free_license">Free</string>
     <string name="subtitle_free_license">For personal &amp; commercial projects</string>
     <string name="title_commercial_license">Commercial</string>

@@ -15,4 +15,16 @@
                 android:textSize="14sp"
                 android:paddingTop="24dp"/>
     </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_subcategory">
+        <com.pvasilev.uplabs.AutoCompleteTextInputEditText
+                android:id="@+id/et_subcategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:paddingTop="24dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
 </LinearLayout>
