@@ -28,6 +28,9 @@ class FollowersFragment : BaseMvRxFragment<FollowersState, FollowersViewModel>()
                         id(user.id)
                         title(user.fullName)
                         avatar(user.avatarUrl)
+                        onClick {
+                            viewModel.onProfileClicked(user)
+                        }
                     }
                 }
             }

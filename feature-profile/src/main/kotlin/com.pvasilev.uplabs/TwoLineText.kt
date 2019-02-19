@@ -25,7 +25,9 @@ class TwoLineText(context: Context) : LinearLayout(context) {
     }
 
     @CallbackProp
-    fun clickListener(listener: View.OnClickListener?) {
-        setOnClickListener(listener)
+    fun onClick(callback: (() -> Unit)?) {
+        setOnClickListener {
+            callback?.invoke()
+        }
     }
 }

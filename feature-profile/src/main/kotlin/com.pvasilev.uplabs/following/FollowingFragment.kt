@@ -31,6 +31,9 @@ class FollowingFragment : BaseMvRxFragment<FollowingState, FollowingViewModel>()
                         id(user.id)
                         title(user.fullName)
                         avatar(user.avatarUrl)
+                        onClick {
+                            viewModel.onProfileClicked(user)
+                        }
                     }
                 }
             }
