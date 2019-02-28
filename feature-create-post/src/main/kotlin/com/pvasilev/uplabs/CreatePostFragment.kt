@@ -4,12 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.airbnb.mvrx.BaseMvRxFragment
 import com.airbnb.mvrx.fragmentViewModel
 import com.airbnb.mvrx.withState
 import kotlinx.android.synthetic.main.fragment_base.*
 
-class CreatePostFragment : BaseMvRxFragment() {
+class CreatePostFragment : BaseMvRxFragment<CreatePostState, CreatePostViewModel>() {
+    override val viewModelFactory: BaseMvRxViewModelFactory<CreatePostState, CreatePostViewModel>
+        get() = TODO()
+
     private val viewModel: CreatePostViewModel by fragmentViewModel()
 
     override fun onCreateView(
