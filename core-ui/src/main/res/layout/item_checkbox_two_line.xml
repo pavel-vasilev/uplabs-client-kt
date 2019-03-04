@@ -24,8 +24,7 @@
                 android:textSize="14sp"
                 android:textColor="#000"
                 android:maxLines="1"
-                android:ellipsize="end"
-                android:text="@string/title_free_license"/>
+                android:ellipsize="end"/>
         <TextView
                 android:id="@+id/tv_subtitle"
                 android:layout_width="wrap_content"
@@ -34,7 +33,6 @@
                 android:textSize="12sp"
                 android:textColor="#000"
                 android:maxLines="1"
-                android:ellipsize="end"
-                android:text="@string/subtitle_free_license"/>
+                android:ellipsize="end"/>
     </LinearLayout>
 </LinearLayout>

@@ -1,1 +1,1 @@
-include ':app', ':core', ':feature-profile', ':feature-post-details', ':feature-create-post'
+include ':app', ':core', ':feature-profile', ':feature-post-details', ':feature-create-post', ':core-ui'

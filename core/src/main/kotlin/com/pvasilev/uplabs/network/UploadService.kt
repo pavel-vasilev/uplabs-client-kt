@@ -18,6 +18,6 @@ interface UploadService {
     fun upload(
         @Url signedUrl: String,
         @Header("Content-Type") contentType: String,
-        body: RequestBody
+        @Body body: RequestBody
     ): Completable
 }
