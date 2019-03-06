@@ -2,6 +2,7 @@ package com.pvasilev.uplabs
 
 import android.content.Context
 import android.widget.LinearLayout
+import com.airbnb.epoxy.CallbackProp
 import com.airbnb.epoxy.ModelProp
 import com.airbnb.epoxy.ModelView
 import com.airbnb.epoxy.TextProp
@@ -26,5 +27,10 @@ class TwoLineCheckBox(context: Context) : LinearLayout(context) {
     @TextProp
     fun subtitle(subtitle: CharSequence) {
         tv_subtitle.text = subtitle
+    }
+
+    @CallbackProp
+    fun onCheckedChanged(callback: ((Boolean) -> Unit)?) {
+        checkbox.setOnCheckedChangeListener { _, isChecked -> callback?.invoke(isChecked) }
     }
 }

@@ -6,7 +6,8 @@
             android:id="@+id/iv_preview"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="#BDBDBD"/>
+            android:background="#BDBDBD"
+            android:scaleType="centerCrop"/>
     <ProgressBar
             android:id="@+id/progressBar"
             android:layout_width="56dp"
