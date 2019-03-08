@@ -24,7 +24,7 @@ class SelectorInput(context: Context) : LinearLayout(context) {
 
     @ModelProp
     fun selected(selected: String) {
-        et_input.text = Editable.Factory.getInstance().newEditable(selected)
+        et_input.setText(Editable.Factory.getInstance().newEditable(selected), false)
     }
 
     @ModelProp
