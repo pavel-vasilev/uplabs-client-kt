@@ -9,6 +9,16 @@
         <item>Branding</item>
         <item>Illustration</item>
     </string-array>
+    <string-array name="subcategories">
+        <item>Template</item>
+        <item>UIKit</item>
+        <item>Icon</item>
+        <item>Illustration</item>
+        <item>Theme</item>
+        <item>Font</item>
+        <item>Mockup</item>
+        <item>Logo</item>
+    </string-array>
     <string name="hint_title">Title</string>
     <string name="hint_description">Description</string>
     <string name="hint_category">Category</string>
