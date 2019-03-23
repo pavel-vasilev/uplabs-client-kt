@@ -1,9 +1,14 @@
 package com.pvasilev.uplabs.models
 
+import com.pvasilev.uplabs.network.Selector
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
+@Selector(
+    value = "[data-react-class=Post]",
+    attr = "data-react-props"
+)
 data class Post(
     val id: Int,
     @Json(name = "name") val title: String,

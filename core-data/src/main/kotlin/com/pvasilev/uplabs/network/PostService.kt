@@ -1,9 +1,10 @@
 package com.pvasilev.uplabs.network
 
+import com.pvasilev.uplabs.models.Post
+import com.serjltt.moshi.adapters.Wrapped
 import io.reactivex.Completable
-import retrofit2.http.Field
-import retrofit2.http.FormUrlEncoded
-import retrofit2.http.POST
+import io.reactivex.Observable
+import retrofit2.http.*
 
 interface PostService {
     @POST("posts")
@@ -26,4 +27,8 @@ interface PostService {
         @Field("post[payload]") payload: String = "{}",
         @Field("post[showcase_later]") showcaseLater: Int = 0
     ): Completable
+
+    @Wrapped(path = ["post"])
+    @GET("posts/{link}")
+    fun getPost(@Path("link") link: String): Observable<Post>
 }
