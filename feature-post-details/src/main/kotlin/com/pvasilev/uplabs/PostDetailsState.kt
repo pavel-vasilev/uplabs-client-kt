@@ -6,10 +6,10 @@ import com.airbnb.mvrx.Uninitialized
 import com.pvasilev.uplabs.models.Comment
 import com.pvasilev.uplabs.models.Post
 
-class PostDetailsState(
-    val id: Int,
+data class PostDetailsState(
+    val link: String,
     val post: Async<Post> = Uninitialized,
     val comments: Async<List<Comment>> = Uninitialized
 ) : MvRxState {
-    constructor(args: PostDetailsArgs) : this(args.id)
+    constructor(args: PostDetailsArgs) : this(args.link)
 }

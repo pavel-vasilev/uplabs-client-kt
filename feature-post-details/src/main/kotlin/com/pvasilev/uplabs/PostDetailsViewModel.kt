@@ -4,12 +4,25 @@ import com.airbnb.mvrx.BaseMvRxViewModel
 import com.airbnb.mvrx.FragmentViewModelContext
 import com.airbnb.mvrx.MvRxViewModelFactory
 import com.airbnb.mvrx.ViewModelContext
+import com.pvasilev.uplabs.network.PostService
 import com.squareup.inject.assisted.Assisted
 import com.squareup.inject.assisted.AssistedInject
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.schedulers.Schedulers
 
 class PostDetailsViewModel @AssistedInject constructor(
-    @Assisted initialState: PostDetailsState
+    @Assisted initialState: PostDetailsState,
+    private val postService: PostService
 ) : BaseMvRxViewModel<PostDetailsState>(initialState) {
+
+    init {
+        withState { state ->
+            postService.getPost(state.link)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .execute { copy(post = it) }
+        }
+    }
 
     @AssistedInject.Factory
     interface Factory : BaseMvRxViewModelFactory<PostDetailsState, PostDetailsViewModel>
