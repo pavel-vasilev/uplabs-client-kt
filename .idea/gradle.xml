@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/feature-create-post" />
             <option value="$PROJECT_DIR$/feature-post-details" />
             <option value="$PROJECT_DIR$/feature-profile" />
+            <option value="$PROJECT_DIR$/feature-search" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
