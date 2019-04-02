@@ -1,4 +1,4 @@
-package com.pvasilev.uplabs.network
+package com.pvasilev.uplabs.network.services
 
 import com.pvasilev.uplabs.models.Post
 import com.serjltt.moshi.adapters.Wrapped
@@ -29,6 +29,5 @@ interface PostService {
     ): Completable
 
     @Wrapped(path = ["post"])
-    @GET("posts/{link}")
-    fun getPost(@Path("link") link: String): Observable<Post>
+    fun getPost(@Url link: String): Observable<Post>
 }

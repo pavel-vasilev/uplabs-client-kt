@@ -6,6 +6,7 @@ import okhttp3.ResponseBody
 import org.jsoup.Jsoup
 import retrofit2.Converter
 import retrofit2.Retrofit
+import retrofit2.http.GET
 import java.lang.reflect.Type
 
 class PostConverter(private val delegate: Converter<ResponseBody, Post>) : Converter<ResponseBody, Post> {
@@ -23,8 +24,13 @@ class PostConverter(private val delegate: Converter<ResponseBody, Post>) : Conve
             annotations: Array<Annotation>,
             retrofit: Retrofit
         ): Converter<ResponseBody, *>? {
+            val annotation = annotations.mapNotNull { it as? GET }.firstOrNull()
             val delegate = retrofit.nextResponseBodyConverter<Post>(this, type, annotations)
-            return PostConverter(delegate)
+            return if (annotation != null && annotation.value.isEmpty()) {
+                PostConverter(delegate)
+            } else {
+                delegate
+            }
         }
     }
 }

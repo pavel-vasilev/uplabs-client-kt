@@ -4,7 +4,7 @@ import com.airbnb.mvrx.BaseMvRxViewModel
 import com.airbnb.mvrx.FragmentViewModelContext
 import com.airbnb.mvrx.MvRxViewModelFactory
 import com.airbnb.mvrx.ViewModelContext
-import com.pvasilev.uplabs.network.PostService
+import com.pvasilev.uplabs.network.services.PostService
 import com.squareup.inject.assisted.Assisted
 import com.squareup.inject.assisted.AssistedInject
 import io.reactivex.android.schedulers.AndroidSchedulers

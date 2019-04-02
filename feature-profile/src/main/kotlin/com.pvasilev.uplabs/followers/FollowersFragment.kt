@@ -10,7 +10,8 @@ import com.pvasilev.uplabs.*
 import kotlinx.android.synthetic.main.fragment_base.*
 
 class FollowersFragment : BaseMvRxFragment<FollowersState, FollowersViewModel>() {
-    override val viewModelFactory: FollowersViewModel.Factory = TODO()
+    override val viewModelFactory: BaseMvRxViewModelFactory<FollowersState, FollowersViewModel>
+        get() = TODO()
 
     private val viewModel: FollowersViewModel by fragmentViewModel()
 

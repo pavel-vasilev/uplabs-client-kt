@@ -6,14 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import com.airbnb.mvrx.fragmentViewModel
 import com.airbnb.mvrx.withState
-import com.pvasilev.uplabs.BaseMvRxFragment
-import com.pvasilev.uplabs.EndlessScrollListener
-import com.pvasilev.uplabs.R
-import com.pvasilev.uplabs.postPreview
+import com.pvasilev.uplabs.*
 import kotlinx.android.synthetic.main.fragment_base.*
 
 class ProfileFragment : BaseMvRxFragment<ProfileState, ProfileViewModel>() {
-    override val viewModelFactory: ProfileViewModel.Factory = TODO()
+    override val viewModelFactory: BaseMvRxViewModelFactory<ProfileState, ProfileViewModel>
+        get() = TODO()
 
     private val viewModel: ProfileViewModel by fragmentViewModel()
 

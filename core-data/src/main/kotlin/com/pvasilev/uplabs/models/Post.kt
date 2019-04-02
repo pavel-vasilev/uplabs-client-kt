@@ -14,6 +14,7 @@ data class Post(
     @Json(name = "name") val title: String,
     @Json(name = "description_without_html") val description: String,
     @Json(name = "preview_url") val previewUrl: String,
+    @Json(name = "link_url") val link: String,
     @Json(name = "label_friendly_name") val label: String,
     @Json(name = "category_friendly_name") val category: String,
     @Json(name = "serialized_submitter") val submitter: User,

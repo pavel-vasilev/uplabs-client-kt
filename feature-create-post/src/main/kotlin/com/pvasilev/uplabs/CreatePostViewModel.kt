@@ -5,8 +5,8 @@ import com.airbnb.mvrx.FragmentViewModelContext
 import com.airbnb.mvrx.MvRxViewModelFactory
 import com.airbnb.mvrx.ViewModelContext
 import com.pvasilev.uplabs.models.*
-import com.pvasilev.uplabs.network.PostService
-import com.pvasilev.uplabs.network.UploadService
+import com.pvasilev.uplabs.network.services.PostService
+import com.pvasilev.uplabs.network.services.UploadService
 import com.squareup.inject.assisted.Assisted
 import com.squareup.inject.assisted.AssistedInject
 import io.reactivex.Observable

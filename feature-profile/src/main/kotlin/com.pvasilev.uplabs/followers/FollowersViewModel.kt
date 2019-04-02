@@ -6,7 +6,7 @@ import com.airbnb.mvrx.MvRxViewModelFactory
 import com.airbnb.mvrx.ViewModelContext
 import com.pvasilev.uplabs.BaseMvRxViewModelFactory
 import com.pvasilev.uplabs.models.User
-import com.pvasilev.uplabs.network.UserService
+import com.pvasilev.uplabs.network.services.UserService
 import com.pvasilev.uplabs.profile.ProfileScreen
 import com.squareup.inject.assisted.Assisted
 import com.squareup.inject.assisted.AssistedInject

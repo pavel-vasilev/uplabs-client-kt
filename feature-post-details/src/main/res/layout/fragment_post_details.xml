@@ -107,6 +107,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:textColor="#1d1d1b"
@@ -115,6 +116,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_comments_label"
+                app:layout_constraintBottom_toBottomOf="parent"
                 tools:text="Vuesax provides unique features like fuzzy search, bookmarks, floating navbar, dark layout, advance cards and charts. It comes with 2 niche dashboards, 4 workable apps like email, chat, todo and calendar. Vuesax admin can be used for any type of web applications: Project Management, eCommerce backends, CRM, Analytics, Banking, Education, Fitness or any custom vuejs admin ashboard."/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -37,8 +37,8 @@ androidExtensions {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(':core-data')
     implementation project(":core-ui")
+    implementation project(':core-data')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0-alpha01'
     implementation 'androidx.core:core-ktx:1.1.0-alpha03'
@@ -51,8 +51,6 @@ dependencies {
     implementation 'ru.terrakok.cicerone:cicerone:5.0.0'
     implementation 'com.squareup.inject:assisted-inject-annotations:0.3.2'
     kapt 'com.squareup.inject:assisted-inject-processor:0.3.2'
-    implementation 'com.github.stephanenicolas.toothpick:toothpick-runtime:2.1.0'
-    kapt 'com.github.stephanenicolas.toothpick:toothpick-compiler:2.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'

@@ -1,4 +1,4 @@
-package com.pvasilev.uplabs.network
+package com.pvasilev.uplabs.network.services
 
 import com.pvasilev.uplabs.models.SignedUrl
 import io.reactivex.Completable

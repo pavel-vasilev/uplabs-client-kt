@@ -6,14 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import com.airbnb.mvrx.fragmentViewModel
 import com.airbnb.mvrx.withState
-import com.pvasilev.uplabs.BaseMvRxFragment
-import com.pvasilev.uplabs.EndlessScrollListener
-import com.pvasilev.uplabs.R
-import com.pvasilev.uplabs.oneLineAvatar
+import com.pvasilev.uplabs.*
 import kotlinx.android.synthetic.main.fragment_base.*
 
 class FollowingFragment : BaseMvRxFragment<FollowingState, FollowingViewModel>() {
-    override val viewModelFactory: FollowingViewModel.Factory = TODO()
+    override val viewModelFactory: BaseMvRxViewModelFactory<FollowingState, FollowingViewModel>
+        get() = TODO()
 
     private val viewModel: FollowingViewModel by fragmentViewModel()
 
